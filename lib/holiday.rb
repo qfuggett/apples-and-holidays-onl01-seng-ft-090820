@@ -87,7 +87,7 @@ def all_holidays_with_bbq(holiday_hash)
       if "#{supplies}" == "BBQ"
           array_holiday_name = [ ]
           array_holiday_name << "#{holiday_name}"
-
+          array_holiday_name
       end
     end
     array_holiday_name
