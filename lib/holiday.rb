@@ -76,8 +76,8 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_name.to_s.split("_").collect do |split_names|
         new_split_names = [ ]
         new_split_names << split_names.capitalize
-        new_split_names.join(" ")
-        puts supplies.join(", ")
+        puts new_split_names.join(" ")
+        puts supplies.join(" , ")
       end 
 
     end
