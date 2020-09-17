@@ -90,7 +90,7 @@ def all_holidays_with_bbq(holiday_hash)
         holiday_name
       else nil
       end
-    end
+    end.flatten.collect
     
   end
   
