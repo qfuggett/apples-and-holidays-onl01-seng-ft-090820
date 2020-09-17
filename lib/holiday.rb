@@ -93,6 +93,8 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.include?("BBQ") ? holiday_name : nil
     end
   end
+  
+  holiday_name.flatten.compact
 
 end
 
