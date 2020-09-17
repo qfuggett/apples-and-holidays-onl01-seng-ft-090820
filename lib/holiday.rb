@@ -86,13 +86,11 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.collect do |season, holiday|
     
     holiday.collect do |holiday_name, supplies|
-      if "#{supplies}" == "BBQ"
-          array_holiday_name = [ ]
-          array_holiday_name << "#{holiday_name}"
-          array_holiday_name
+      if supplies.include?("BBQ")
+        holiday_name
+      else nil
       end
     end
-    array_holiday_name
   end
 
 end
