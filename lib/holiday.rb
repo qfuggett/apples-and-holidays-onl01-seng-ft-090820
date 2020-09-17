@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     holiday.each do |holiday_name, supplies|
       "#{holiday_name.to_s.split("_")}"
-    
+    binding.pry
     end
   end
 
