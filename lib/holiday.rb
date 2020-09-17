@@ -87,10 +87,8 @@ def all_holidays_with_bbq(holiday_hash)
     
     holiday.collect do |holiday_name, supplies|
       if supplies.include?("BBQ")
-        holiday_name_array = [ ]
-        holiday_name_array << holiday_name
-        holiday_name_array.flatten
-      else nil
+        holiday_name
+      else holiday_name.delete
       end
     end
   end
